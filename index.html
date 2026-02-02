@@ -56,6 +56,24 @@ h1 {
 h2 {
     color: #ffffff;
     margin-top: 60px;
+    font-weight: bold;
+}
+
+/* SEKCE BOX */
+.section-box {
+    background-color: #2a2a3f;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ODKAZ DOLE UPROSTŘED */
+.box-link {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #444;
 }
 
 /* SEKCE PROJEKTY */
@@ -72,6 +90,7 @@ h2 {
 
 .projects h3 {
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 p {
@@ -82,6 +101,10 @@ p {
 a.pdf-link {
     color: #80bfff;
     font-size: 0.95em;
+}
+
+a.pdf-link:hover {
+    text-decoration: underline;
 }
 
 /* DĚLÍCÍ ČÁRA */
@@ -101,8 +124,8 @@ a.pdf-link {
     <a href="#uvod">Úvod, zájmy</a>
     <a href="#projekty">Projekty</a>
     <a href="#kresleni">Kreslení</a>
-    <a href="#projekty">scio testy</a>
-    <a href="#projekty">Absolventská práce a doporučení učitele</a>
+    <a href="#scio">Scio testy</a>
+    <a href="#absolventska">Absolventská práce a doporučení učitele</a>
 </div>
 
 <!-- OBSAH -->
@@ -111,85 +134,118 @@ a.pdf-link {
     <!-- ÚVOD -->
     <h1 id="uvod">Portfolio – Petr Vořech</h1>
 
-    <p>
-        Jmenuji se Petr Vořech, je mi 14 let a jsem žák 9. ročníku základní školy Veltrusy.
-        Již od mala se pohybuji ve světě počítačů, nedávno jsem také začal programovat
-        v Pythonu a velmi mě to baví. Programování vnímám jako produktivně strávený
-        čas, ve kterém se snažím neustále zlepšovat.
-    </p>
-    <p>
-        Mimo můj nový koníček rád sportuji. V dětství jsem hrál tenis, florbal a fotbal.
-        Také miluji lyžování, je to jedna z mála důvodů proč mám rád zimu.
-        Minulý rok jsem začal chodit do posilovny a na lezecké stěny.
-        Oba sporty jsou pravidelnou součástí mého týdne.
-    </p>
+    <div class="section-box">
+        <p>
+            Jmenuji se Petr Vořech, je mi 14 let a jsem žák 9. ročníku základní školy Veltrusy.
+            Již od mala se pohybuji ve světě počítačů, nedávno jsem také začal programovat
+            v Pythonu a velmi mě to baví. Programování vnímám jako produktivně strávený
+            čas, ve kterém se snažím neustále zlepšovat.
+        </p>
+        <p>
+            Mimo můj nový koníček rád sportuji. V dětství jsem hrál tenis, florbal a fotbal.
+            Také miluji lyžování, je to jedna z mála důvodů proč mám rád zimu.
+            Minulý rok jsem začal chodit do posilovny a na lezecké stěny.
+            Oba sporty jsou pravidelnou součástí mého týdne.
+        </p>
+    </div>
     
     <!-- PROJEKTY -->
     <h2 id="projekty" class="section-title">Projekty</h2>
 
-    <div class="projects">
-        <h3>
-            Discord ChatBot –
-            <a href="https://docs.google.com/document/d/1FVbWrBTsp9J1xcnkF4bvbArra5JAwiPpv1zVaAWT2bU/edit?usp=sharing"
-               class="pdf-link"
-               target="_blank">
-               ukázka zde 
-            </a>
-        </h3>
+    <div class="section-box">
+        <div class="projects">
+            <h3>Discord ChatBot</h3>
 
-        <p>
-            Discord ChatBot je můj doposud největší projekt, funguje pomocí AI které má přístup k mnoho dalším nástrojům,
-            jako například informace o aktuálním počasí. ChatBot jede neustále skrze funkce Renderu. S ChatBotem si také můžete zahrát hry nebo se ho zeptat na informaci
-            o prvních 50 pokemonech. Taky vám může nastavit budíka tuto funkci jsem přidal, když jsem si dělal cermatovej test.
-            Říkal jsem si že by bylo super kdyby mi dokázal stopnout hodinu bez toho aniž bych si musel nastavovat stopky na mobilu.
-            Mám v plánu mu přidávat další funkce aby sloužil co nejlépe.
+            <p>
+                Discord ChatBot je můj doposud největší projekt, funguje pomocí AI které má přístup k mnoho dalším nástrojům,
+                jako například informace o aktuálním počasí. ChatBot jede neustále skrze funkce Renderu. S ChatBotem si také můžete zahrát hry nebo se ho zeptat na informaci
+                o prvních 50 pokemonech. Taky vám může nastavit budíka tuto funkci jsem přidal, když jsem si dělal cermatovej test.
+                Říkal jsem si že by bylo super kdyby mi dokázal stopnout hodinu bez toho aniž bych si musel nastavovat stopky na mobilu.
+                Mám v plánu mu přidávat další funkce aby sloužil co nejlépe.
+            </p>
             
-        </p>
-      </div>
+            <div class="box-link">
+                <a href="https://docs.google.com/document/d/1FVbWrBTsp9J1xcnkF4bvbArra5JAwiPpv1zVaAWT2bU/edit?usp=sharing"
+                   class="pdf-link"
+                   target="_blank">
+                   Ukázka zde
+                </a>
+            </div>
+        </div>
+    </div>
 
-     <div class="projects">
-        <h3>
-            Hra - Kámen, nůžky, papír
-            <a href="https://docs.google.com/document/d/13LSlbYsetk0S0Qp5pIynXCVNM1U2K-YqlRKQEBAFUJI/edit?usp=sharing"
-               class="pdf-link"
-               target="_blank">
-               ukázka zde 
-            </a>
-        </h3>
-         <p>
-           Můj další mini projekt. Je to klasická hra kámen nůžky papír. Tento mini projekt jsem také přidal do projektu "Discordbot"
-        </p>
-     </div>
+    <div class="section-box">
+        <div class="projects">
+            <h3>Hra - Kámen, nůžky, papír</h3>
+            <p>
+               Můj další mini projekt. Je to klasická hra kámen nůžky papír. Tento mini projekt jsem také přidal do projektu "Discordbot"
+            </p>
+            
+            <div class="box-link">
+                <a href="https://docs.google.com/document/d/13LSlbYsetk0S0Qp5pIynXCVNM1U2K-YqlRKQEBAFUJI/edit?usp=sharing"
+                   class="pdf-link"
+                   target="_blank">
+                   Ukázka zde
+                </a>
+            </div>
+        </div>
+    </div>
 
-     <div class="projects">
-        <h3>
-            Hra - Uhodni číslo
-            <a href="https://docs.google.com/document/d/10RiA3e7LCwNstu7JGM__EOLdi5vT3sqGCI4ive4DqLE/edit?usp=sharing"
-               class="pdf-link"
-               target="_blank">
-               ukázka zde 
-            </a>
-        </h3>
-         <p>
-           Můj úplně první projekt. Je to hra spočívající na vygenerování náhodného čísla které následně musím uhodnout.
-           Tento mini projekt jsem přidal jako minihru do mého většího projektu "Discordbot"
-        </p>
-     </div>
+    <div class="section-box">
+        <div class="projects">
+            <h3>Hra - Uhodni číslo</h3>
+            <p>
+               Můj úplně první projekt. Je to hra spočívající na vygenerování náhodného čísla které následně musím uhodnout.
+               Tento mini projekt jsem přidal jako minihru do mého většího projektu "Discordbot"
+            </p>
+            
+            <div class="box-link">
+                <a href="https://docs.google.com/document/d/10RiA3e7LCwNstu7JGM__EOLdi5vT3sqGCI4ive4DqLE/edit?usp=sharing"
+                   class="pdf-link"
+                   target="_blank">
+                   Ukázka zde
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- KRESLENÍ -->
-    <h2 id="kresleni" class="section-title">Kreslení  <a href="https://docs.google.com/document/d/1J-GhbRCmTbGzflxIhQ4f8vi95OOpjWVWBnJ_JGMqLak/edit?usp=sharing"
+    <h2 id="kresleni" class="section-title">Kreslení</h2>
+    
+    <div class="section-box">
+        <p>
+            S kreslením jsem začal v roce 2021 potom co jsem začal koukat na Japonské anime. Začal jsem si kupovat "mangy" 
+            a tak mě napadlo že si ty obrazky začnu kreslit. Později jsem přešel i na vlastní fantasii nebo realistické věci a graffiti.
+            Inspiroval jsem se hlavně seriálem One Piece a Bleach .
+        </p>
+        
+        <div class="box-link">
+            <a href="https://docs.google.com/document/d/1J-GhbRCmTbGzflxIhQ4f8vi95OOpjWVWBnJ_JGMqLak/edit?usp=sharing"
                class="pdf-link"
                target="_blank">
-             - ukázka zde
-      </a>
-    </h2>
-    <p>
-        S kreslením jsem začal v roce 2021 potom co jsem začal koukat na Japonské anime. Začal jsem si kupovat "mangy" 
-        a tak mě napadlo že si ty obrazky začnu kreslit. Později jsem přešel i na vlastní fantasii nebo realistické věci a graffiti.
-        Inspiroval jsem se hlavně seriálem One Piece a Bleach .
-    </p>
+               Ukázka zde
+            </a>
+        </div>
+    </div>
 
-       </div>
+    <!-- SCIO TESTY -->
+    <h2 id="scio" class="section-title">Scio testy</h2>
+    
+    <div class="section-box">
+        <p>
+            Zde můžeš napsat text o Scio testech.
+        </p>
+        
+        <div class="box-link">
+            <a href="TU_VLOZ_ODKAZ"
+               class="pdf-link"
+               target="_blank">
+               Ukázka zde
+            </a>
+        </div>
+    </div>
+
+</div>
     
 </body>
 </html>
