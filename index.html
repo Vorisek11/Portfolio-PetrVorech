@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -66,6 +67,33 @@ h2 {
     padding: 25px;
     margin-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* TŘI BOXY VEDLE SEBE */
+.three-boxes {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.box-third {
+    flex: 1;
+    background-color: #2a2a3f;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.box-third h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.box-third p {
+    flex-grow: 1;
 }
 
 /* ODKAZ DOLE UPROSTŘED */
@@ -228,20 +256,55 @@ a.pdf-link:hover {
         </div>
     </div>
 
-    <!-- SCIO TESTY -->
-    <h2 id="scio" class="section-title">Scio testy</h2>
+    <!-- TŘI BOXY VEDLE SEBE -->
+    <h2 id="scio" class="section-title">Scio testy, Absolventská práce a doporučení od mé třídní učitelky</h2>
     
-    <div class="section-box">
-        <p>
-            Mé scio testy, můj  průměrný percentil je 81.
-        </p>
-        
-        <div class="box-link">
-            <a href="https://docs.google.com/document/d/1MuTt0_L5hwz1OlPE1AX4yDRbza5H8H3R_ZY2ILKzjIg/edit?usp=sharing"
-               class="pdf-link"
-               target="_blank">
-               Ukázka Scio testů
-            </a>
+    <div class="three-boxes">
+        <!-- SCIO TESTY -->
+        <div class="box-third">
+            <h3>Scio testy</h3>
+            <p>
+                Mé scio testy, můj průměrný percentil je 81.
+            </p>
+            <div class="box-link">
+                <a href="https://docs.google.com/document/d/1MuTt0_L5hwz1OlPE1AX4yDRbza5H8H3R_ZY2ILKzjIg/edit?usp=sharing"
+                   class="pdf-link"
+                   target="_blank">
+                   Ukázka Scio testů
+                </a>
+            </div>
+        </div>
+
+        <!-- ABSOLVENTSKÁ PRÁCE -->
+        <div class="box-third">
+            <h3>Absolventská práce</h3>
+            <p>
+                Má rozepsaná absolventská práce na téma LYŽOVÁNÍ A SNOWBOARDING.
+                Dělám jí na moje 2 velmi oblíbené zimní sporty kterými se zabívám už od mala.
+                Tato práce má velkou hodnotu mích známek a dávám si na ní velmi záležet.
+            </p>
+            <div class="box-link">
+                <a href="https://docs.google.com/document/d/1AkS5I7lCgDnR_6DDXaCqgRgriBfiCzkScCYlOy-E6uA/edit?usp=sharing"
+                   class="pdf-link"
+                   target="_blank">
+                   Ukázka práce
+                </a>
+            </div>
+        </div>
+
+        <!-- DOPORUČENÍ UČITELKY -->
+        <div class="box-third">
+            <h3>Doporučení učitelky</h3>
+            <p>
+                Doporučení od mé třídní učitelky která má dlouhodobé zkušenosti s učením českého a německého jazyka.
+            </p>
+            <div class="box-link">
+                <a href="https://docs.google.com/document/d/1PFVIZ9vXYKXkrqWZvJ0HzmNG-GpIZjvinROzwXTgN08/edit?usp=sharing"
+                   class="pdf-link"
+                   target="_blank">
+                   Ukázka doporučení
+                </a>
+            </div>
         </div>
     </div>
 
@@ -249,25 +312,5 @@ a.pdf-link:hover {
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
